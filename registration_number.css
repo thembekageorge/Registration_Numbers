@@ -1,0 +1,42 @@
+#heading {
+background-color: black;
+font-size: 3em;
+/*position: fixed;*/
+color: white;
+text-align: center;
+}
+body {
+  background-color: grey;
+}
+#display{
+  display: inline-block;
+  border: 15px solid black;
+  background-color: yellow;
+  border-radius: 3em;
+  font-size: 2em;
+  padding: 20px;
+}
+#form{
+  border: 2px solid black;
+  display: block;
+  background-color: #d3d3d3;
+}
+#prompt{
+font-size: 2em;
+}
+#numberplate{
+padding: 15px;
+width: 400px;
+font-size: 2em;
+color: black;
+}
+#addButton {
+  background-color: white;
+   border: 2px solid black;
+   color: black;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 2em;
+   border-radius: 1em;
