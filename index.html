@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
     <title>Registration Numbers</title>
-    <link rel="stylesheet" href="registration_number.css">
-  </head>
-  <body>
-    <div id="container">
-      <div id="header">
-  <h1 id="heading">Registration Numbers</h1>
+        <link rel="stylesheet" href="registration_number.css">
+</head>
+<body>
+ <div id="heading">
+    <p>Registration Numbers</p>
+         </div>
+         <br>
+          <div id="main">
+    <form id="form" align="center">
+    <input type="text"  id="numberplate" placeholder="Enter your registration #">
+    <br>
+    <br>
+    <button type="button" id="addButton" value="" onclick="display();">Add</button>
+    <br>
+    <br>
+    </form>
+        <div id="location" align="center">
+            <input id="whichTown" list="list" placeholder="search">
+            <br>
+            <br>
+            <button type="button" id="filterButton" onclick="filter()">Filter</button>
+            <br>
+           <datalist id="list">
+               <option id="all" name="All" >All</option>
+               <option id="capetown" name="Capetown" >Cape Town</option>
+               <option id="bellville" name="Bellville" >Bellville</option>
+                <option id="paarl" name="Paarl" >Paarl</option>
+            </datalist>
+        </div>
+        <br>
 </div>
-<div id="main">
-  <form id="form">
-    <center><p id="prompt">Registration number:</p><br></center>
-      <center> <input type="text" name="name" placeholder="enter your registration here" id = "numberplate"><br></center>
-         <br>
-         <br>
-        <center><input type="button" value="Add" id = "addButton"></center>
-        <p id="display"></p>
-      </form>
-    </div>
-      <script src="registration_number.js" charset="utf-8"/>
-  </div>
-  </body>
+        <div id="display" align="center">
+        <ul id="numberplates"></ul>
+            </div>
+    <script type="text/javascript" src="registration_number.js"></script>
+    </body>
 </html>
